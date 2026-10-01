@@ -1,0 +1,20 @@
+{
+  "base_dir": "/scratch/pioneer/jobs/xxl1337/huggingface/hub/models--Qwen--Qwen2.5-7B-Instruct/snapshots/a09a35458c702b33eeacc393d103063234e8bc28",
+  "ft_dir": "/mnt/rds/VipinRDS/VipinRDS/users/xxl1337/qwen25/global_step_1755/actor/huggingface",
+  "base_tensor_count": 339,
+  "ft_tensor_count": 339,
+  "common_tensor_count": 339,
+  "compared_tensor_count": 339,
+  "exactly_equal_tensor_count": 4,
+  "only_base_keys": [],
+  "only_ft_keys": [],
+  "shape_mismatches": [],
+  "total_numel": 7615616512,
+  "global_changed_count": 4311725710,
+  "global_changed_ratio": 0.5661689638922827,
+  "global_max_abs_diff": 0.00262451171875,
+  "global_mean_abs_diff": 4.5289183814500363e-05,
+  "global_rms_diff": 6.974775394348675e-05,
+  "global_base_rms": 0.022278581685217604,
+  "global_relative_l2": 0.0031307088992009813
+}

@@ -1,0 +1,9 @@
+# Install a vLLM build compatible with your CUDA/ROCm environment.
+vllm
+datasets
+numpy
+pandas
+scipy
+sympy
+tqdm
+tabulate

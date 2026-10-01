@@ -1,0 +1,73 @@
+{
+  "model": "/mnt/rds/VipinRDS/VipinRDS/users/xxl1337/qwen25/global_step_1755/actor/huggingface/",
+  "model_name": "ours",
+  "baseline_model": null,
+  "baseline_name": "Baseline",
+  "tokenizer": null,
+  "baseline_tokenizer": null,
+  "num_runs": 10,
+  "seed": 42,
+  "sample_ratio": 1.0,
+  "max_examples_per_dataset": null,
+  "resample_each_run": false,
+  "resume": true,
+  "max_tokens": 8192,
+  "temperature": 0.6,
+  "top_p": 1.0,
+  "top_k": -1,
+  "min_p": 0.0,
+  "repetition_penalty": 1.0,
+  "batch_size": 0,
+  "use_tqdm": true,
+  "tensor_parallel_size": 2,
+  "dtype": "auto",
+  "max_model_len": null,
+  "gpu_memory_utilization": 0.9,
+  "cpu_offload_gb": 0.0,
+  "quantization": null,
+  "generation_config": "vllm",
+  "trust_remote_code": false,
+  "enforce_eager": false,
+  "enable_prefix_caching": false,
+  "bootstrap_samples": 10000,
+  "hf_token": null,
+  "out_dir": "runs/ours/qwen25_7b",
+  "datasets": [
+    "MATH500",
+    "AIME24",
+    "AIME25",
+    "AMC23"
+  ],
+  "dataset_config": {
+    "MATH500": {
+      "path": "HuggingFaceH4/MATH-500",
+      "name": null,
+      "split": "test",
+      "filters": []
+    },
+    "AIME24": {
+      "path": "math-ai/aime24",
+      "name": null,
+      "split": "test"
+    },
+    "AIME25": {
+      "path": "math-ai/aime25",
+      "name": null,
+      "split": "test"
+    },
+    "AMC23": {
+      "path": "AI-MO/aimo-validation-amc",
+      "name": null,
+      "split": "train",
+      "filters": [
+        {
+          "field": "url",
+          "op": "contains",
+          "value": "2023"
+        }
+      ]
+    }
+  },
+  "system_prompt": "You are a careful mathematical problem solver. Solve the problem correctly and concisely. Put only the final answer inside \\boxed{...}.",
+  "user_prompt_template": "{question}\n\nYou FIRST think about the reasoning process as an internal monologue and then provide the final answer. The reasoning process MUST BE enclosed within <think> </think> tags. The final answer MUST BE put in \\boxed{{}}."
+}
